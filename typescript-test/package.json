@@ -1,0 +1,25 @@
+{
+  "name": "typescript-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "npm run clean",
+    "postbuild": "npm run clean:tmp",
+    "clean": "npm run -s clean:build && npm run -s clean:tmp",
+    "clean:build": "rimraf -r build/*",
+    "clean:tmp": "rimraf -r .tmp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "rollup": "^0.41.4",
+    "typescript": "^2.2.1"
+  }
+}
