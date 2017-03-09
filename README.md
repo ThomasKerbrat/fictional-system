@@ -14,7 +14,7 @@ VSCode typings are automatically supported and imported by the `node_modules/typ
 
 # Initial setup
 
-In the development machines, we can link the two projects together to fasten the development cycle.
+In the development machines, we can link the two projects together to speed up the development cycle.
 The library `typescript-test` will be linked to its dependent `ts-dep`.
 
 ``` bash
