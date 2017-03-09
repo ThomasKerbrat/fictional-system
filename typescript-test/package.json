@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc -w",
     "prebuild": "npm run clean",
     "postbuild": "npm run clean:tmp",
     "clean": "npm run -s clean:build && npm run -s clean:tmp",
@@ -19,7 +20,6 @@
   "license": "ISC",
   "devDependencies": {
     "rimraf": "^2.6.1",
-    "rollup": "^0.41.4",
     "typescript": "^2.2.1"
   }
 }
