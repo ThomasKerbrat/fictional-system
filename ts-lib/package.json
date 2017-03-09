@@ -1,5 +1,5 @@
 {
-  "name": "typescript-test",
+  "name": "ts-lib",
   "version": "0.1.0",
   "description": "",
   "main": "build/index.js",

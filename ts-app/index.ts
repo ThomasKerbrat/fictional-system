@@ -1,3 +1,3 @@
-import test from 'typescript-test';
+import test from 'ts-lib';
 
 console.log(test.c.c);

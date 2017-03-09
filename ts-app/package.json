@@ -1,5 +1,5 @@
 {
-  "name": "ts-dep",
+  "name": "ts-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript-test": "../typescript-test"
+    "ts-lib": "../ts-lib"
   }
 }
