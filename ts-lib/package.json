@@ -1,16 +1,21 @@
 {
   "name": "ts-lib",
   "version": "0.1.0",
-  "description": "",
-  "main": "build/index.js",
+  "description": "A library.",
+  "main": "build/index",
   "files": [
     "build"
   ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
-    "prebuild": "npm run clean",
-    "postbuild": "npm run clean:tmp",
+    "build": "tsc --project tsconfig.json",
+    "prebuild": "npm run -s clean",
+    "postbuild": "npm run -s clean:tmp",
+    "build:t": "tsc --project ./tsconfig.spec.json",
+    "prebuild:t": "npm run -s prebuild",
+    "build:w": "tsc -w",
+    "prebuild:w": "npm run -s prebuild",
+    "test": "mocha build/",
+    "pretest": "npm run -s build:t",
     "clean": "npm run -s clean:build && npm run -s clean:tmp",
     "clean:build": "rimraf -r build/*",
     "clean:tmp": "rimraf -r .tmp"
@@ -19,6 +24,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "rimraf": "^2.6.1",
     "typescript": "^2.2.1"
   }
