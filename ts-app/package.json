@@ -1,13 +1,13 @@
 {
   "name": "ts-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thomas Kerbrat <kerbrat@outlook.com>",
   "license": "ISC",
   "dependencies": {
     "ts-lib": "../ts-lib"
