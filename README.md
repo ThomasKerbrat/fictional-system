@@ -33,4 +33,4 @@ It uses Chai as its assertion library.
 For the normal build, the `tsconfig.json` file excludes the spec files.
 This is not the case for the test build, obviously.
 
-See [](https://journal.artfuldev.com/write-tests-for-typescript-projects-with-mocha-and-chai-in-typescript-86e053bdb2b6).
+See [https://journal.artfuldev.com/write-tests-for-typescript-projects-with-mocha-and-chai-in-typescript-86e053bdb2b6]().
